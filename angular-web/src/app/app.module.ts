@@ -11,6 +11,7 @@ import { HeroContentComponent } from './hero-banner/hero-content/hero-content.co
 import { HeroImageComponent } from './hero-banner/hero-image/hero-image.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,7 @@ import { TopNavComponent } from './top-nav/top-nav.component';
     HeroBannerComponent,
     HeroContentComponent,
     HeroImageComponent,
-    TopNavComponent
+    TopNavComponent,
   ],
   imports: [
     BrowserModule,
