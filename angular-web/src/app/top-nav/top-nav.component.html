@@ -1,25 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/home">Navbar</a>
+    <a class="navbar-brand" [routerLinkActiveOptions]="{exact:true}"routerLinkActive="myActiveClass active" routerLink="/">Navbar</a>
+   
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>        </li>
+        <li class="nav-item ">
+          <a class="nav-link" [routerLinkActiveOptions]="{exact:true}"routerLinkActive="myActiveClass active" 
+          routerLink="/home">Home</a> 
+               </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about">About</a>
+          <a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/gallery">Gallery</a>
+          <a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/gallery">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/products">Products</a>
+          <a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/products">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">contact us</a>
+          <a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/contact">contact us</a>
         </li>
   
       </ul>
@@ -30,5 +33,5 @@
     </div>
     </div>
   </nav>
-
+  <!-- <app-page-not-found></app-page-not-found> -->
   <router-outlet></router-outlet>
