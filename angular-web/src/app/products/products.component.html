@@ -1,1 +1,124 @@
-<p>products works!</p>
+<div class="container">
+  <div class="row mt-3 mb-3">
+    <div class="col-md-12">
+      <h3>{{productTitle}}</h3>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col-md-4">
+
+      <div class="product-box main-box">
+        <div class="main___box___img product___box___img">
+          <img src="/assets/cars1.jpg" />
+        </div>
+        <div class="glry___content">
+          <div class="glry___head mt-2">
+            <h4>Car 1</h4>
+          </div>
+          <div class="glry___text">
+            <p>car details </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+
+      <div class="product-box main-box">
+        <div class="main___box___img product___box___img">
+          <img src="/assets/cars2.jpg" />
+        </div>
+        <div class="glry___content">
+          <div class="glry___head mt-2">
+            <h4 class="primary-color">Car 1</h4>
+          </div>
+          <div class="glry___text">
+            <p>car details </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+
+      <div class="product-box main-box">
+        <div class="main___box___img product___box___img">
+          <img src="/assets/cars3.jpg" />
+        </div>
+        <div class="glry___content">
+          <div class="glry___head mt-2">
+            <h4>Car 1</h4>
+          </div>
+          <div class="glry___text">
+            <p>car details </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" class="btn primary-btn" (click)="createSection">
+        Create Section</button>
+      <div>
+        <h3>You can Add section</h3>
+      </div>
+    </div>
+  </div>
+<div   *ngIf="showSection; then thenBlock else elseBlock">
+  <div class="row border">
+  
+    <ng-template #thenBlock>
+
+      <div class="col-md-4">
+        <div class="product-box main-box">
+          <div class="main___box___img product___box___img">
+            <!-- <img src="/assets/cars1.jpg" /> -->
+          </div>
+          <div class="glry___content">
+            <div class="glry___head mt-2">
+              <!-- <h4>Car 1</h4> -->
+            </div>
+            <div class="glry___text">
+              <!-- <p>car details </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-box main-box">
+          <div class="main___box___img product___box___img">
+            <!-- <img src="/assets/cars2.jpg" /> -->
+          </div>
+          <div class="glry___content">
+            <div class="glry___head mt-2">
+              <!-- <h4 class="primary-color">Car 1</h4> -->
+            </div>
+            <div class="glry___text">
+              <!-- <p>car details </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-box main-box">
+          <div class="main___box___img product___box___img">
+            <!-- <img src="/assets/cars3.jpg" /> -->
+          </div>
+          <div class="glry___content">
+            <div class="glry___head mt-2">
+              <!-- <h4>Car 1</h4> -->
+            </div>
+            <div class="glry___text">
+              <!-- <p>car details </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ng-template>
+
+    <ng-template #elseblock>
+      <div>
+        <p>No block has been created</p>
+      </div>
+    </ng-template>
+  </div>

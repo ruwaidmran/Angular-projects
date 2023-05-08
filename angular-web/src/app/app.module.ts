@@ -22,6 +22,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 
 
+
 const appRoutes : Routes=[
 {path:'home',component: HomeComponent},
 {path:'about',component: AboutComponent},
@@ -48,6 +49,7 @@ const appRoutes : Routes=[
     ProductsComponent,
     ContactComponent,
     PageNotFoundComponent,
+ 
   ],
   imports: [
     BrowserModule,
