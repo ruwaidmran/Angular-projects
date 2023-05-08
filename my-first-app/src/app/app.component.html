@@ -1,0 +1,62 @@
+<!-- <input type="text" [(ngModel)]="ServerName" /> -->
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12">
+      <h2 class="rwds">this is default {{ title }}</h2>
+      <hr>
+      <div class="rwds">
+        <app-server></app-server>
+        <app-servers></app-servers>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12">
+      <ol>
+        <li class="list-items"> create two new components (manually or with CLI): WarningAlert and SuccessAlert
+        </li>
+        <li class="list-items">Output them beneath each other in the App component</li>
+        <li class="list-items">Output a warning or success message in the components</li>
+        <li class="list-items">Import Warning component in AppModule.ts and declaration</li>
+        <li class="list-items">Style the components Appropriately (may be some red/ green text?)</li>
+
+      </ol>
+      <p>
+        Use External or internal templates and Styles!
+      </p>
+      <p>Feel free to create more components, nest them into each other or play around with different types of
+        selectors!
+      </p>
+      <app-warning-alert></app-warning-alert>
+      <app-success-alert></app-success-alert>
+
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 p-0">
+
+      <app-recipes></app-recipes>
+      <app-shopping-list></app-shopping-list>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <!-- <app-cockpit></app-cockpit> -->
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <app-serve-element *ngFor="let serverElement of serverElements">
+        [element]="serverElement">
+      </app-serve-element> -->
+    </div>
+  </div>
+</div>
+<!-- <app-server></app-server> -->
