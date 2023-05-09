@@ -7,15 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit{
   constructor(){}
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
 productTitle: string = 'Products';
 
-
-
+//// Add Section on produts temporary hide code
 showSection: boolean=false;
 createSection(){
   this.showSection = true;
 }
+
+//// practice Add Section on produts temporary hide code
+paraGraph: boolean=false;
+createSec(){
+this.paraGraph=true;
+}
+
 }

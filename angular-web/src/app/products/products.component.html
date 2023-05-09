@@ -5,120 +5,169 @@
     </div>
   </div>
   <div class="row ">
-    <div class="col-md-4">
+    <div class="col">
 
       <div class="product-box main-box">
         <div class="main___box___img product___box___img">
-          <img src="/assets/cars1.jpg" />
+          <img src="/assets/mobile1.jpg" />
         </div>
-        <div class="glry___content">
-          <div class="glry___head mt-2">
-            <h4>Car 1</h4>
+        <div class="main___box___content">
+          <div class="main___box___head mt-2">
+            <h5>Car 1</h5>
           </div>
-          <div class="glry___text">
+          <div class="main___box___text">
             <p>car details </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-
+    <div class="col">
       <div class="product-box main-box">
         <div class="main___box___img product___box___img">
-          <img src="/assets/cars2.jpg" />
+          <img src="/assets/brush1.png" />
         </div>
-        <div class="glry___content">
-          <div class="glry___head mt-2">
-            <h4 class="primary-color">Car 1</h4>
+        <div class="main___box___content">
+          <div class="main___box___head mt-2">
+            <h5 class="primary-color">Car 1</h5>
           </div>
-          <div class="glry___text">
+          <div class="main___box___text">
             <p>car details </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col">
 
       <div class="product-box main-box">
         <div class="main___box___img product___box___img">
-          <img src="/assets/cars3.jpg" />
+          <img src="/assets/perfume1.png" />
         </div>
-        <div class="glry___content">
-          <div class="glry___head mt-2">
-            <h4>Car 1</h4>
+        <div class="main___box___content">
+          <div class="main___box___head mt-2">
+            <h5>Car 1</h5>
           </div>
-          <div class="glry___text">
+          <div class="main___box___text">
+            <p>car details </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+
+      <div class="product-box main-box">
+        <div class="main___box___img product___box___img">
+          <img src="/assets/perfume1.png" />
+        </div>
+        <div class="main___box___content">
+          <div class="main___box___head mt-2">
+            <h5>Car 1</h5>
+          </div>
+          <div class="main___box___text">
+            <p>car details </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+
+      <div class="product-box main-box">
+        <div class="main___box___img product___box___img">
+          <img src="/assets/perfume1.png" />
+        </div>
+        <div class="main___box___content">
+          <div class="main___box___head mt-2">
+            <h5>Car 1</h5>
+          </div>
+          <div class="main___box___text">
             <p>car details </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <button type="button" class="btn primary-btn" (click)="createSection">
-        Create Section</button>
-      <div>
-        <h3>You can Add section</h3>
-      </div>
+
+
+
+  <!--Practice -->
+  <div class="row mt-4 mb-4 justify-content-between">
+    <div class="col-md-5">
+      <h5>Others Items</h5>
+    </div>
+    <div class="col-md-3  order-12">
+      <button type="button" class="btn primary-btn float-right" 
+      (click)="createSec()">Show More</button>
     </div>
   </div>
-<div   *ngIf="showSection; then thenBlock else elseBlock">
+  <div *ngIf="paraGraph; then thenBook else elseBook"></div>
   <div class="row border">
-  
-    <ng-template #thenBlock>
-
-      <div class="col-md-4">
-        <div class="product-box main-box">
-          <div class="main___box___img product___box___img">
-            <!-- <img src="/assets/cars1.jpg" /> -->
-          </div>
-          <div class="glry___content">
-            <div class="glry___head mt-2">
-              <!-- <h4>Car 1</h4> -->
+    <ng-template #thenBook>
+      <div class="row p-0 border show-content">
+        <div class="col">
+          <div class="product-box main-box">
+            <div class="main___box___img product___box___img">
+              <img src="/assets/watch2.jpg" />
             </div>
-            <div class="glry___text">
-              <!-- <p>car details </p> -->
+            <div class="main___box___content">
+              <div class="main___box___head mt-2">
+                <h5>Car 1</h5>
+              </div>
+              <div class="main___box___text">
+                <p>car details </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-box main-box">
+            <div class="main___box___img product___box___img">
+              <img src="/assets/watch1.jpg" />
+            </div>
+            <div class="main___box___content">
+              <div class="main___box___head mt-2">
+                <h5 class="primary-color">Car 2</h5>
+              </div>
+              <div class="main___box___text">
+                <p>car details </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-box main-box">
+            <div class="main___box___img product___box___img">
+              <img src="/assets/mobile3.jpg" />
+            </div>
+            <div class="main___box___content">
+              <div class="main___box___head mt-2">
+                <h5>Car 3</h5>
+              </div>
+              <div class="main___box___text">
+                <p>car details </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-box main-box">
+            <div class="main___box___img product___box___img">
+              <img src="/assets/mobile3.jpg" />
+            </div>
+            <div class="main___box___content">
+              <div class="main___box___head mt-2">
+                <h5>Car 3</h5>
+              </div>
+              <div class="main___box___text">
+                <p>car details </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="product-box main-box">
-          <div class="main___box___img product___box___img">
-            <!-- <img src="/assets/cars2.jpg" /> -->
-          </div>
-          <div class="glry___content">
-            <div class="glry___head mt-2">
-              <!-- <h4 class="primary-color">Car 1</h4> -->
-            </div>
-            <div class="glry___text">
-              <!-- <p>car details </p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-box main-box">
-          <div class="main___box___img product___box___img">
-            <!-- <img src="/assets/cars3.jpg" /> -->
-          </div>
-          <div class="glry___content">
-            <div class="glry___head mt-2">
-              <!-- <h4>Car 1</h4> -->
-            </div>
-            <div class="glry___text">
-              <!-- <p>car details </p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-
     </ng-template>
-
-    <ng-template #elseblock>
-      <div>
-        <p>No block has been created</p>
+    <ng-template #elseBook>
+      <div class="row border">
+        <p>no Section has been created</p>
       </div>
     </ng-template>
   </div>
+</div>

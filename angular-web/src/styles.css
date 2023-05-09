@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #ffffff;
 }
 .bg-grey{
     background-color: lightgrey;
@@ -57,6 +58,7 @@ h4,h5,h6{
 
 transition: ease-in-out 0.5s;
 padding: 6px;
+background-color: #e7e7e7;
 }
 
 .main-box:hover{
@@ -64,18 +66,13 @@ padding: 6px;
     border-radius: 5px;
     box-shadow: -1px 5px 20px -5px;
 }
-.main___box___img{
-    /* padding: 5px; */
-}
 .main___box___img img {
     width: 100%;
-    height: 204px;
-    object-fit: cover;
+    height: 185px;
+    object-fit: contain;
     border-radius: 5px;
 }
-.main___box___head {
-    width: 100%;
-    height: 204px;
-    object-fit: cover;
-    border-radius: 5px;
-}
+
+/* .main___box___head {
+
+} */

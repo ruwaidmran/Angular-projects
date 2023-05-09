@@ -1,0 +1,11 @@
+/* .show-content{
+  transition:ease-in 0.5 ;
+    background-color: red ;
+}
+.show-content:focus{
+    transition: ease-in-out 0.5;
+} */
+.show-content .product-box .product___box___img img {
+    height: 283px;
+    object-fit: cover;
+}
