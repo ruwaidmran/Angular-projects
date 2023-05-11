@@ -8,11 +8,12 @@ import { Component , OnInit} from '@angular/core';
 export class SectionThirdComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
-  sectionTitle: string = "Interpolation"
-  myName: string = "Ruwaid Imran";
-  fullName: string = "Muhammad"
+  // sectionTitle: string = "Interpolation"
+  fullName: string = "Test"
+  myName: string = "testing";
+
   myMethod() {
-    return "my Name is " + this.fullName + this.myName;
+    return "here is my " + this.fullName + this.myName;
   }
 
   appStatus: boolean = true;

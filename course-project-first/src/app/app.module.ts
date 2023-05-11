@@ -13,11 +13,12 @@ import { RecipesListComponent } from './recipes/recipes-list/recipes-list.compon
 import { RecipesItemsComponent } from './recipes/recipes-list/recipes-items/recipes-items.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
-const appRoutes: Routes=[
-{path:'recipes', component: RecipesComponent},
-{path:'shopping-list', component: ShoppingListComponent},
-]
+const appRoutes: Routes = [
+  {path: '', redirectTo : '/recipes' , pathMatch :'full'},
+{path: 'recipes', component: RecipesComponent},
+{path: 'shopping-list', component: ShoppingListComponent},
 
+];
 
 
 @NgModule({
@@ -34,7 +35,8 @@ const appRoutes: Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
+      RouterModule.forRoot(appRoutes)
+
   ],
   providers: [],
   bootstrap: [AppComponent]

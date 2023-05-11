@@ -21,8 +21,8 @@ body{
 
 }
 .bg-secondary{
-    background-color: rgb(255, 145, 91);
-
+        background-color: #fff8f5  !important;
+  
 }
 
 .primary-btn{
