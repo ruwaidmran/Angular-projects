@@ -7,7 +7,7 @@ import{Recipe} from '../recipes.model'
 })
 export class RecipesListComponent implements OnInit{
 recipes : Recipe[]=[
-  new Recipe('name','description','https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg')
+  new Recipe('name','description','https://img.freepik.com/free-photo/pasta-colored-farfalle-salad-with-tomatoes-mozzarella-basil_2829-14368.jpg?w=740&t=st=1683805112~exp=1683805712~hmac=3c3ad47bdb7ad0622f5a59060832719dde61a723ea75df82649b93eaea24aa0f')
 ];
 
 constructor(){}
